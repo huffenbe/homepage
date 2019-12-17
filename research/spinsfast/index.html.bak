@@ -1,0 +1,128 @@
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="../../css/homepage.css" />
+
+</head>
+
+<body>
+
+<div class="header">Kevin Huffenberger</div>
+
+
+<div class="sidebar">
+<a class="tab" style="" href="http://www.physics.miami.edu"><img style="border : none" src="../../figs/miami-green.png"></a>
+<a class="tab" href="../../index.html">Home</a>
+<a class="tab" href="../index.html">Research</a>
+
+
+</div>
+<div class="main">
+
+<H1>Fast and exact spin-s spherical harmonic transforms</h1> 
+<h3>(aka. "spinsfast")</H3>
+
+<p>
+This software implements the fast algorithm for spherical harmonics described in Huffenberger and Wandelt, <a href="http://stacks.iop.org/0067-0049/189/255">ApJS 189 (2010) 255-260</a>, released under GPL version 3.
+</p>
+
+<h2> Download source </h2>
+
+<p><a href="releases/spinsfast_rev104.tar.gz">Revision 104</a>, 13 Apr 2012.</p>
+<p>
+<i>New for revison 104:</i> added python module.  Generally made easier to compile by making fitsio, gsl, and healpix optional for the library.
+</p>
+
+
+<p> <a href="oldreleases.html"> Older versions </a>
+
+
+<h2> Compiling </h2>
+
+<p>
+<ol>
+  <li> Edit the configuration file (or make a new file) called build/config.mk so that the proper locations for header and library files are included. </li>
+    
+    
+  <li> Set the environment variable "build" so that it points to that file. ie
+in bash, say
+
+<p>	export build=build/config.mk </p>
+</li>
+
+  <li> Build the library and example codes with 
+
+<p>	make</p>
+
+  <p>  This will create the file lib/libspinsfast.a, and also several example programs.</p>
+</li>
+
+  <li> (Optional) Run the example programs to test the library. </li>
+
+</ol>
+</p>
+
+<h2> Example programs </h2>
+
+<p>These are included to show how to implement various functions and features in the library.  All the codes generate random spherical harmonic coefficients, transform to real space, then transform back to harmonic space and compare to the original coefficients.
+
+<p>When working properly, these codes should return a maximum fractional error in the set of harmonic coefficients at the level of a few 10^-13 for band limit lmax = 127.  This gradually increases with lmax, so that it is a few 10^-12 at lmax = 2048.
+
+<h3> Python example_spin </h3>
+
+<p>Run this script with: </p>
+
+<p> python example/example_spin.py
+
+<p> It will generate some random harmonic coefficients, transform them into a map, then transform back and report the maximum error.  It also showed an image of the real part of the map.
+
+
+<h3> example_spin </h3>
+
+<p>  This code has four arguments: </p>
+
+<p>  example_spin <i>spin</i> <i>lmax</i> <i>Nphi</i> <i>Ntheta-1</i>
+	
+<p>	Running a spin s = -3 set of transforms at lmax = 127 and the minimum number of pixels to support that band limit, which is Nphi = Ntheta = 256, is executed as
+	
+<p>	./bin/example_spin -3 127 256 255
+	
+
+
+<h3> example_multispin </h3>
+
+<p>  This code has three arguments: </p>
+
+<p>  example_multispin <i>lmax</i> <i>Nphi</i> <i>Ntheta-1</i>
+	
+<p>	and will compute for the (hard-coded but easily changed) spin values -3, 0, 1, 2, and 17.  Example run:
+	
+<p>	./bin/example_multispin 127 256 255
+	
+
+<h3> example_iqu</h3>
+
+This code shows how to make spin 0,+/-2 transforms of intensity and polarization map, which is a common task for cosmic microwave analysis.
+
+<p>  This code has three arguments: </p>
+
+<p>  example_iqu <i>lmax</i> <i>Nphi</i> <i>Ntheta-1</i>
+	
+<p>	Example run:
+	
+<p>	./bin/example_iqu 127 256 255
+	
+
+<h2>Problems or bugs</h2>
+
+<p>Please let Kevin know at huffenbe *at* physics.miami.edu.</p>
+
+<p>Subsequent work by <a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6006544&tag=1">McEwen and Wiaux</a> have identified a factor of two more efficient sphere-to-torus extension.  This lowers the memory requirements, and speeds up the (timewise sub-dominant) FFT portion of the code.  Since I expect the speed improvements to be modest, this has not been a high priority, but it is an improvement nonetheless, so we'll implement it at some point in a future revision. </p>
+
+<p>Occasionally, running with very low lmax (<30), the example codes will segfault.  This disappears when compiled with less agressive optimization.  (Martin Reinecke identified a minor bug, now fixed, which may have been responsible.)</p>
+
+</div>
+
+</body>
+
+</html>

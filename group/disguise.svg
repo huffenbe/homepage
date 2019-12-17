@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="150"
+   height="225"
+   id="svg2385"
+   sodipodi:version="0.32"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="disguise.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   version="1.1"
+   inkscape:export-filename="/home/huffenbe/web/homepage/group/disguise.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs2387">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 384 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="1024 : 384 : 1"
+       inkscape:persp3d-origin="512 : 256 : 1"
+       id="perspective2393" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#a2a2a2"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="1"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.0666667"
+     inkscape:cx="-91.874995"
+     inkscape:cy="112.5"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="px"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:snap-guide="false"
+     guidetolerance="10"
+     inkscape:window-width="1366"
+     inkscape:window-height="711"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1">
+    <sodipodi:guide
+       orientation="0,1"
+       position="0,704"
+       id="guide2395" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="36,601.90758"
+       id="guide2417" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="984,613.26433"
+       id="guide2564" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="-79.497227,36"
+       id="guide2566" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="-179.81516,688"
+       id="guide2568" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata2390">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     transform="translate(0,-543)">
+    <path
+       sodipodi:type="arc"
+       style="fill:#540115;stroke:none;stroke-width:1.77691161999999991;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;fill-opacity:1"
+       id="path2988"
+       sodipodi:cx="72.357956"
+       sodipodi:cy="90.639206"
+       sodipodi:rx="31.448864"
+       sodipodi:ry="31.576704"
+       d="m 103.80682,90.639206 c 0,17.439334 -14.080136,31.576704 -31.448864,31.576704 -17.368728,0 -31.448864,-14.13737 -31.448864,-31.576704 0,-17.439332 14.080136,-31.576704 31.448864,-31.576704 17.368728,0 31.448864,14.137372 31.448864,31.576704 z"
+       transform="matrix(1.688386,0,0,1.6882591,-47.16816,461.4406)"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="fill:#540115;fill-opacity:1;stroke:none"
+       id="rect2992"
+       width="165.34091"
+       height="162.86932"
+       x="-7.6704559"
+       y="666.02838"
+       ry="65.971619"
+       rx="51.221588"
+       inkscape:export-filename="/home/huffenbe/web/homepage/group/disguise.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+  </g>
+</svg>

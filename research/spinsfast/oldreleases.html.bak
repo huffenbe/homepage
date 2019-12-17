@@ -1,0 +1,28 @@
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="../../css/homepage.css" />
+
+</head>
+
+<body>
+
+<div class="header">Kevin Huffenberger</div>
+
+
+<div class="sidebar">
+<a class="tab" style="" href="http://www.physics.miami.edu"><img style="border : none" src="../../figs/miami-green.png"></a>
+<a class="tab" href="../../index.html">Home</a>
+<a class="tab" href="../index.html">Research</a>
+
+
+</div>
+<div class="main">
+<h4> Older versions </h4>
+
+<p><a href="releases/spinsfast_rev90.tar.gz">Revision 90</a>, 11 Aug 2010.</p>
+<p>
+<i>New for revison 90:</i> added rudimentary conversions between healpix and ecp pixelizations, fixed bug where the square root precomputation's allocator was too-small by one. (Thanks Martin Reinecke!)
+</p>
+<p><a href="releases/spinsfast_rev85.tar.gz">Revision 85</a>, 30 Jun 2010.</p>
+</div>
